@@ -176,6 +176,7 @@ body {
   background-color: var(--bo);
   color: var(--lg);
   cursor: pointer;
+  outline: 1px solid var(--lg);
 }
 
 .flex-children:nth-child(2) > button {
@@ -187,6 +188,7 @@ body {
   background-color: var(--dc);
   color: var(--lg);
   cursor: pointer;
+  outline: 1px solid var(--lg);
 }
 
 .flex-children:nth-child(3) > button {
@@ -198,6 +200,7 @@ body {
   background-color: var(--vdc);
   color: var(--lg);
   cursor: pointer;
+  outline: 1px solid var(--lg);
 }
 
 .flex-children > img {
