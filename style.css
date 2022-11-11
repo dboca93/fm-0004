@@ -170,6 +170,7 @@ body {
 .flex-children:nth-child(1) > button {
   background-color: var(--lg);
   color: var(--bo);
+  border: 1px solid transparent;
 }
 
 .flex-children:nth-child(1) > button:hover {
@@ -183,6 +184,7 @@ body {
 .flex-children:nth-child(2) > button {
   background-color: var(--lg);
   color: var(--dc);
+  border: 1px solid transparent;
 }
 
 .flex-children:nth-child(2) > button:hover {
@@ -196,6 +198,7 @@ body {
 .flex-children:nth-child(3) > button {
   background-color: var(--lg);
   color: var(--vdc);
+  border: 1px solid transparent;
 }
 
 .flex-children:nth-child(3) > button:hover {
