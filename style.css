@@ -176,7 +176,7 @@ body {
   background-color: var(--bo);
   color: var(--lg);
   cursor: pointer;
-  outline: 1px solid var(--lg);
+  border: 1px solid var(--lg);
   border-radius: 2rem;
 }
 
@@ -189,7 +189,7 @@ body {
   background-color: var(--dc);
   color: var(--lg);
   cursor: pointer;
-  outline: 1px solid var(--lg);
+  border: 1px solid var(--lg);
   border-radius: 2rem;
 }
 
@@ -202,7 +202,7 @@ body {
   background-color: var(--vdc);
   color: var(--lg);
   cursor: pointer;
-  outline: 1px solid var(--lg);
+  border: 1px solid var(--lg);
   border-radius: 2rem;
 }
 
