@@ -8,7 +8,13 @@
 With this project, I used for the first time reset styles from https://piccalil.li/blog/a-modern-css-reset/ -- let me know if this an appropriate practice. 
 
 For the design itself, I used a 3-column grid, transitioning into one-column @ 48em (768px). Please advise if this would be the sensible
-breakpoint for such a project. 
+breakpoint for such a project.
+
+Also, when you hover over the 
+buttons -- there is a slight 
+movement in the rest of the 
+container -- what is the standard way of avoiding this?
+
 ## Screenshot
 
 ![](images/Screenshot.png)
