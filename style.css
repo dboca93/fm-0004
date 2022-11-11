@@ -1,0 +1,262 @@
+/*  Modern CSS reset - https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --ff1: "Lexend Deca", sans-serif;
+  --ff2: "Big Shoulders Display", cursive;
+  --bo: hsl(31, 77%, 52%);
+  --dc: hsl(184, 100%, 22%);
+  --vdc: hsl(179, 100%, 13%);
+  --tw: hsla(0, 0%, 100%, 0.75);
+  --lg: hsl(0, 0%, 95%);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--lg);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*End of the Reset */
+body {
+    min-height: 100vh; 
+    position: relative;
+    z-index: 1; 
+    background-color: var(--lg);
+}
+
+.main-list {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  max-width: 90rem;
+  min-width: 29rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 30rem));
+}
+
+.flex-container > .flex-children:nth-child(1) {
+  background-color: var(--bo);
+}
+
+.flex-container > .flex-children:nth-child(2) {
+  background-color: var(--dc);
+}
+
+.flex-container > .flex-children:nth-child(3) {
+  background-color: var(--vdc);
+}
+
+.flex-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4rem 5rem;
+  border-radius: 0.8rem;
+}
+
+.flex-children > h1, .flex-children > h2, 
+.flex-children > h3 {
+  font-family: var(--ff2);
+  color: var(--lg);
+  margin: 1rem 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.flex-children > p {
+  font-size: 1rem;
+  height: 25%;
+  font-family: var(--ff1);
+  font-size: 1.5rem;
+  color: var(--tw);
+  margin: 1rem 0 3rem 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.flex-children > button {
+  margin: 5.5rem 0 1rem 0;
+  outline: .1rem solid var(--lg);
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  width: 14.6rem;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  font-family: var(--ff1);
+  font-weight: 300;
+}
+
+.flex-children:nth-child(1) > button {
+  background-color: var(--lg);
+  color: var(--bo);
+}
+
+.flex-children:nth-child(1) > button:hover {
+  background-color: var(--bo);
+  color: var(--lg);
+  cursor: pointer;
+}
+
+.flex-children:nth-child(2) > button {
+  background-color: var(--lg);
+  color: var(--dc);
+}
+
+.flex-children:nth-child(2) > button:hover {
+  background-color: var(--dc);
+  color: var(--lg);
+  cursor: pointer;
+}
+
+.flex-children:nth-child(3) > button {
+    background-color: var(--lg);
+    color: var(--vdc);
+  }
+  
+  .flex-children:nth-child(3) > button:hover {
+    background-color: var(--vdc);
+    color: var(--lg);
+    cursor: pointer;
+  }
+  
+.flex-children > img {
+  width: 6.4rem;
+  height: 4rem;
+  margin: 2rem 0;
+}
+
+.flex-container > div:nth-child(1) {
+  background-color: orange;
+}
+
+.flex-container > div:nth-child(2) {
+  background-color: green;
+}
+
+.flex-container > div:nth-child(3) {
+  background-color: darkgreen;
+}
+
+@media only screen and (max-width: 48em) {
+  .flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 50rem);
+  }
+
+  .flex-container > .flex-children {
+    padding: 4rem 3rem;
+    border-radius: 0 0 0 0;
+  }
+}
+
+footer {
+    min-height: 10vh; 
+    background-color: dodgerblue; 
+    position: sticky; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    top: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: 1rem;
+}
+
+footer > a > .lni {
+  width: 5rem; 
+  height: 5rem; 
+  font-size: 3.2rem;
+  text-align: center;
+  color: var(--lg); 
+  padding-top: .5rem;
+}
+
+footer > a > .lni:hover {
+  cursor: pointer;
+  font-size: 3.4rem;
+}
+
+footer > a:not(:last-child){
+  margin-right: 2rem;
+}
