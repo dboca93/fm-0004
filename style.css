@@ -156,7 +156,6 @@ body {
 
 .flex-children > button {
   margin: 5.5rem 0 1rem 0;
-  outline: 0.1rem solid var(--lg);
   background-color: transparent;
   border: none;
   color: inherit;
