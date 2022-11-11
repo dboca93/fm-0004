@@ -86,13 +86,15 @@ select {
 }
 /*End of the Reset */
 body {
-    min-height: 100vh; 
-    position: relative;
-    z-index: 1; 
-    background-color: var(--lg);
+  min-height: 100vh;
+  background-color: var(--lg);
 }
 
 .main-list {
+  position: relative;
+  background-color: var(--lg);
+  z-index: 1;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -126,7 +128,8 @@ body {
   border-radius: 0.8rem;
 }
 
-.flex-children > h1, .flex-children > h2, 
+.flex-children > h1,
+.flex-children > h2,
 .flex-children > h3 {
   font-family: var(--ff2);
   color: var(--lg);
@@ -153,7 +156,7 @@ body {
 
 .flex-children > button {
   margin: 5.5rem 0 1rem 0;
-  outline: .1rem solid var(--lg);
+  outline: 0.1rem solid var(--lg);
   background-color: transparent;
   border: none;
   color: inherit;
@@ -188,16 +191,16 @@ body {
 }
 
 .flex-children:nth-child(3) > button {
-    background-color: var(--lg);
-    color: var(--vdc);
-  }
-  
-  .flex-children:nth-child(3) > button:hover {
-    background-color: var(--vdc);
-    color: var(--lg);
-    cursor: pointer;
-  }
-  
+  background-color: var(--lg);
+  color: var(--vdc);
+}
+
+.flex-children:nth-child(3) > button:hover {
+  background-color: var(--vdc);
+  color: var(--lg);
+  cursor: pointer;
+}
+
 .flex-children > img {
   width: 6.4rem;
   height: 4rem;
@@ -230,26 +233,27 @@ body {
 }
 
 footer {
-    min-height: 10vh; 
-    background-color: dodgerblue; 
-    position: sticky; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    top: 100%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding-top: 1rem;
+  height: 8rem;
+  background-color: dodgerblue;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 footer > a > .lni {
-  width: 5rem; 
-  height: 5rem; 
+  width: 5rem;
+  height: 5rem;
   font-size: 3.2rem;
   text-align: center;
-  color: var(--lg); 
-  padding-top: .5rem;
+  color: var(--lg);
+  padding-top: 0.5rem;
 }
 
 footer > a > .lni:hover {
@@ -257,6 +261,6 @@ footer > a > .lni:hover {
   font-size: 3.4rem;
 }
 
-footer > a:not(:last-child){
+footer > a:not(:last-child) {
   margin-right: 2rem;
 }
