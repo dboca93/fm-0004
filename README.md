@@ -7,7 +7,7 @@
 - [Overview](#overview)
 With this project, I used for the first time reset styles from https://piccalil.li/blog/a-modern-css-reset/ -- let me know if this an appropriate practice. 
 
-For the design itself, I used a 3-column grid, transitioning into one-column @ 48em (768px). Please advise if this would be the sensible breakpoint for such a project?
+For the design itself, I used a 3-column grid, transitioning into one-column @ 48em (768px). 
 
 
 
